@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital General de Huaura - Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <header id="header-section">
+        <div class="header-top-bar">
+            <div class="logo-area">
+                <img src="img/hoslogo.jpg" alt="Logo del Hospital">
+            </div>
+            <div class="nav-links-area">
+                <nav class="nav-links">
+                    <a href="#ver-mas">ver mas</a>
+                    <a href="#ultimos-lanzamientos">ultimos lanzamientos</a>
+                    <a href="#ver-carrito">ver carrito</a>
+                </nav>
+                <button class="btn-registro">Regístrese</button>
+            </div>
+        </div>
+
+        <div class="header-main-content">
+            <h1 class="titulo-hospital">Hospital General de Huaura</h1>
+            <form action="#" class="search-form">
+                <input type="text" placeholder="buscar" class="input-buscar">
+                <button type="submit" class="btn-buscar">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <section id="imagenes-section">
+        <h2>Productos mas vistos hoy</h2>
+        <div class="productos-contenedor">
+            <div class="producto-card">
+                <div class="producto-imagen-contenedor">
+                    <img src="img/aspirina.jpg" alt="Aspirina">
+                </div>
+                <p>Aspirina</p>
+                <button class="btn-carrito">añadir a carrito</button>
+            </div>
+            <div class="producto-card">
+                <div class="producto-imagen-contenedor">
+                    <img src="img/panadol.jpg" alt="Panadol">
+                </div>
+                <p>Panadol</p>
+                <button class="btn-carrito">añadir a carrito</button>
+            </div>
+            <div class="producto-card">
+                <div class="producto-imagen-contenedor">
+                    <img src="img/paracetamol.jpg" alt="Paracetamol">
+                </div>
+                <p>Paracetamol</p>
+                <button class="btn-carrito">añadir a carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="categorias">
+        <h2>Categorias</h2>
+        <div class="categorias-grid-container">
+            <div class="categorias-botones">
+                <button>Los mas vendidos</button>
+                <button>Productos naturales</button>
+                <button>Los mas consumidos de hoy</button>
+                <button>ultimos lanzamientos</button>
+            </div>
+            <div class="categorias-promocion">
+                <img src="img/descuento.jpg" alt="Promoción">
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto-section">
+        <div>
+            <h2>Registro de Usuario</h2>
+            <p>Ingresa tus datos para registrarte en nuestra plataforma.</p>
+            <form action="#" method="post">
+                <input type="text" placeholder="(Nombre)" name="nombre" required>
+                <input type="email" placeholder="(Correo)" name="correo" required>
+                <input type="text" placeholder="(Apellido)" name="apellido" required>
+                <input type="tel" placeholder="(Whasapp)" name="whatsapp" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer id="footer-seccion">
+        <div class="franja-inferior">
+            <div class="franja-inferior-contenido">
+                <p class="icono-izquierda">
+                   
+                    &copy; <span id="current-year"></span> **Hospital General de Huaura**. Todos los derechos reservados. | Desarrollado con 💙.
+                </p>
+                <div class="iconos-derecha">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <button id="fab-social" class="floating-action-button">
+        <i class="fas fa-share-alt"></i>
+    </button>
+    
+    <div id="social-popup" class="social-popup-overlay">
+        <div class="social-popup-content">
+            <h3>¡Síguenos y Comparte!</h3>
+            
+            <div class="social-button-container">
+                <a href="https://www.instagram.com/" target="_blank" class="social-btn instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <span class="social-text">¡Últimas noticias y contenido visual!</span>
+            </div>
+
+            <div class="social-button-container">
+                <a href="https://www.facebook.com/" target="_blank" class="social-btn facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <span class="social-text">Interactúa con nuestra comunidad y eventos.</span>
+            </div>
+
+            <div class="social-button-container">
+                <a href="https://api.whatsapp.com/send?text=Mira%20esta%20página%20del%20Hospital%20General%20de%20Huaura:%20URL_DE_TU_WEB" target="_blank" class="social-btn whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <span class="social-text">Contáctanos de forma rápida y directa.</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

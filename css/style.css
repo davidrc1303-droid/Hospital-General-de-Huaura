@@ -1,0 +1,236 @@
+#imagenes-section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+#imagenes-section h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.productos-contenedor {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.producto-card {
+    text-align: center;
+    flex-basis: calc(33.33% - 20px);
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #fefefe;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.producto-card .producto-imagen-contenedor {
+    width: 100%; 
+    height: 220px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.producto-card .producto-imagen-contenedor img {
+    max-width: 90%;
+    max-height: 90%; 
+    object-fit: contain;
+}
+
+.producto-card p {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 10px 0 20px;
+    color: #333;
+}
+
+.producto-card .btn-carrito {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.producto-card .btn-carrito:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+
+#categorias {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+#categorias h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#categorias h2:last-of-type { 
+    display: none; 
+}
+
+
+.categorias-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 50px;
+    align-items: start;
+}
+
+.categorias-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.categorias-botones button {
+    background-color: #f8f9fa;
+    color: #343a40;
+    padding: 15px 25px;
+    border: 1px solid #dcdcdc;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.05em;
+    font-weight: 600;
+    text-align: left;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.categorias-botones button:hover {
+    background-color: #e2e6ea;
+    border-color: #adb5bd;
+    transform: translateX(5px);
+}
+
+.categorias-promocion {
+    width: 100%;
+    height: 320px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.categorias-promocion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+    border-radius: 10px;
+}
+
+.categorias-promocion::before {
+    content: none; 
+}
+
+
+#contacto-section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+#contacto-section h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+#contacto-section p {
+    margin-bottom: 30px;
+    color: #6c757d;
+    font-size: 1.1em;
+}
+
+#contacto-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+#contacto-section input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contacto-section input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+#contacto-section button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#contacto-section button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
